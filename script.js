@@ -1,1 +1,12 @@
-const toggle=document.querySelector('.nav-toggle');const nav=document.querySelector('.main-nav');if(toggle){toggle.addEventListener('click',()=>{nav.classList.toggle('open');toggle.setAttribute('aria-expanded',nav.classList.contains('open'));});}document.querySelectorAll('.dropbtn').forEach(btn=>btn.addEventListener('click',()=>btn.parentElement.classList.toggle('open')));const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));const year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();
+# Crisis Nexus Advisory website — Version 2
+
+Static website prepared for GitHub Pages.
+
+## Publish
+Upload every file in this folder to the root of the `Crisis-Nexus-Advisory` repository. Replace the existing files when prompted. GitHub Pages will redeploy automatically.
+
+## Contact
+The site uses `aokello3300@gmail.com`.
+
+## Important note on institutional logos
+The logos identify institutions connected to previous professional assignments or engagements. They must not be presented as current clients, endorsements, formal partners or sponsors unless that status is documented and authorized.
